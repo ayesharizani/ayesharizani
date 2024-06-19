@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AirPollutionInfo</title>
+
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    @import url('header.css');
+    @import url('footer.css');
+
+    section {
+      margin-top: 100px;
+      margin-left: 75px;
+      margin-right: 75px;
+      margin-bottom: 100px;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      padding: 10px;
+      justify-content: center;
+    }
+
+    .card {
+      border: 1px solid #c5c5c5;
+      width: 300px;
+      height: 450px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-title {
+      font-weight: bold;
+      text-align: center;
+      margin: 10px 0;
+    }
+
+    .card img {
+      width: 250px;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .card p {
+      padding: 10px;
+      text-align: center;
+    }
+
+    .definition-container {
+      position: relative;
+    }
+
+    .definition-container p {
+      margin: 0;
+    }
+
+    .news-section {
+      padding: 20px;
+    }
+
+    .news-item {
+      display: flex;
+      align-items: center;
+      border: 1px solid #c5c5c5;
+      margin-bottom: 20px;
+      padding: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .news-item img {
+      width: 50%;
+      height: 200px;
+      object-fit: cover;
+      margin-right: 20px;
+    }
+
+    .news-item-title {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="header">
+      <h1>AirSense Southeast Asia</h1>
+      <nav>
+        <ul>
+          <li><a href="AirPollutionInfo.html">AirPollutionInfo</a></li>
+          <li><a href="index.html">SEAMap</a></li>
+          <li><a href="insights&FAQs.html">Insights&FAQs</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section>
+    <h2>AirPollutionInfo</h2>
+    <div class="definition-container">
+    </div>
+  </section>
+
+  <section>
+    <h2>What is Air Pollution ?</h2>
+    <div class="definition-container">
+      <p>Air pollution is the contamination of air due to the presence of substances called pollutants in the atmosphere that are harmful to the health of humans and other living beings, or cause damage to the climate or to materials. It is also the contamination of the indoor or outdoor environment either by chemical, physical, or biological agents that alters the natural features of the atmosphere. There are many different types of air pollutants, such as gases (including ammonia, carbon monoxide, sulfur dioxide, nitrous oxides, methane and chlorofluorocarbons), particulates (both organic and inorganic) and biological molecules.</p>
+      <a href="https://en.wikipedia.org/wiki/Air_pollution" class="definition-link" target="_blank">Read more</a>
+    </div>
+  </section>
+
+  <section>
+    <h2>The Causes of Air Pollution</h2>
+    <p>Various human activities contribute significantly to the deterioration of air quality. Among the primary sources of air pollution are the burning of fossil fuels, emissions from automobiles, industrial processes, agricultural practices, mining activities, and domestic sources. Each of these activities releases a variety of harmful pollutants into the atmosphere, including sulfur dioxide, carbon monoxide, hydrocarbons, ammonia, and other toxic chemicals. Understanding the causes of air pollution is crucial for developing effective strategies to combat it and protect our planet's air quality for future generations.</p>
+    <div class="card-container">
+
+      <div class="card">
+        <div class="card-title">Burning of Fossil Fuels</div>
+        <img src="img/fossilfuels.jpeg" alt="Burning of Fossil Fuels">
+        <p>The combustion of fossil fuels emits a large amount of sulfur dioxide. Carbon monoxide released by incomplete combustion of fossil fuels also results in air pollution.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Automobiles</div>
+        <img src="img/automobiles.jpeg" alt="Automobiles">
+        <p>The gases emitted from vehicles such as jeeps, trucks, cars, buses, etc. pollute the environment. These are the major sources of greenhouse gases and also result in diseases among individuals.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Factories and Industries</div>
+        <img src="img/factories.jpeg" alt="Factories and Industries">
+        <p>Factories and industries are the main source of carbon monoxide, organic compounds, hydrocarbons, and chemicals. These are released into the air, degrading its quality.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Agricultural Activities</div>
+        <img src="img/agricultural.jpeg" alt="Agricultural Activities">
+        <p>Ammonia is one of the most hazardous gases emitted during agricultural activities. The insecticides, pesticides, and fertilizers emit harmful chemicals into the atmosphere and contaminate it.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Mining Activities</div>
+        <img src="img/miningactivities.jpeg" alt="Mining Activities">
+        <p>In the mining process, the minerals below the earth are extracted using large pieces of equipment. The dust and chemicals released during the process not only pollute the air, but also deteriorate the health of the workers and people living in the nearby areas.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Domestic Sources</div>
+        <img src="img/domesticsources.jpeg" alt="Domestic Sources">
+        <p>The household cleaning products and paints contain toxic chemicals that are released into the air. The smell from the newly painted walls is the smell of the chemicals present in the paints. It not only pollutes the air but also affects breathing.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>News</h2>
+    <p>The news stories below serve as compelling evidence that poor air quality significantly affects our daily lives. They highlight the various ways in which air pollution impacts health, well-being, and overall quality of life.</p>
+    <div class="news-section">
+
+      <div class="news-item">
+        <img src="img/news01.jpg" alt="news01">
+        <div>
+          <div class="news-item-title">Study estimates that between 1980 and 2020, 135 million premature deaths could be linked to fine particulate matter pollution</div>
+          <p class="news-item-summary">The study found that climate variability phenomena such as El Niño, the Indian Ocean Dipole, and the North Atlantic Oscillation exacerbate PM2.5 pollution, leading to a 14% rise in premature deaths. From 1980 to 2020, major causes of these deaths included stroke (33.3%), ischemic heart disease (32.7%), chronic obstructive pulmonary disease, lower respiratory infections, and lung cancer. Asia, particularly China and India, saw the highest number of premature deaths attributable to PM2.5 pollution. The study underscores the importance of considering climate patterns in air quality strategies to mitigate health impacts.</p>
+          <a href="https://www.sciencedaily.com/releases/2024/06/240610140259.htm" class="definition-link" target="_blank">Read more</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <img src="img/news02.jpg" alt="news02">
+        <div>
+          <div class="news-item-title">Early life exposure to weed pollen could increase childhood asthma risk</div>
+          <p class="news-item-summary">Researchers, led by Éric Lavigne from the University of Ottawa, found that tree canopies offer protective effects against childhood asthma, which diminishes with increased exposure to weed pollen. Analyzing data from over 214,000 mother-child pairs in Ontario, they discovered that more than 13% of the children were diagnosed with asthma. The study revealed that urban green spaces increase pollen exposure, reducing the protective benefits of tree canopies. These findings highlight the need for urban planners and public health officials to consider tree species and pollen control to minimize asthma risks in children.</p>
+          <a href="https://www.sciencedaily.com/releases/2024/06/240610170930.htm" class="definition-link" target="_blank">Read more</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <img src="img/news03.png" alt="news03">
+        <div>
+          <div class="news-item-title">Asian monsoon lofts ozone-depleting substances to stratosphere</div>
+          <p class="news-item-summary">Powerful monsoon winds, strengthened by a warming climate, are lofting unexpectedly large quantities of ozone-depleting substances high into the atmosphere over East Asia, according to new research. The study found that the East Asian Monsoon delivers more than twice the concentration of very short-lived ozone-depleting substances into the upper troposphere and lower stratosphere than previously reported.</p>
+          <a href="https://www.sciencedaily.com/releases/2024/04/240423184701.htm" class="definition-link" target="_blank">Read more</a>
+        </div>
+      </div>
+    </div>
+    <p>The evidence from these news stories clearly illustrates the detrimental effects of poor air quality on various aspects of life. Addressing air pollution is not only a matter of public health but also essential for maintaining economic stability and environmental integrity. It is imperative that we adopt effective measures to mitigate air pollution and ensure a healthier, more sustainable future for all.</p>
+  </section>
+
+  <footer>
+    <p>&copy; AirSense Southeast Asia</p>
+  </footer>
+</body>
+
+</html>

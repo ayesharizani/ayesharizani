@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Air Quality Map</title>
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+  <style>
+
+    section {
+      margin-top: 100px;
+      margin-left: 75px;
+      margin-right: 75px;
+      margin-bottom: 100px;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .info-box {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .color-scale table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    .color-scale th, .color-scale td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: center;
+    }
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="header">
+      <h1>AirSense Southeast Asia</h1>
+      <nav>
+        <ul>
+          <li><a href="AirPollutionInfo.html">AirPollutionInfo</a></li>
+          <li><a href="index.html">SEAMap</a></li>
+          <li><a href="insights&FAQs.html">Insights&FAQs</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section>
+    <h2>SEAMap</h2>
+    <div class="definition-container">
+    </div>
+  </section>
+
+  <section>
+    <p>This map uses an air quality data API to display real-time AQI levels for cities.</p>
+
+    <div style="display: flex;">
+      <div id="map" style="height:500px; width: 75%;"></div>
+      <div class="info-box" style="width: 25%; padding: 20px;">
+        <div id="current-location-aqi">Loading current location AQI...</div>
+        <h3 class="color-scale">AQI Color Scale Guide</h3>
+        <table>
+          <tr>
+            <th>AQI Range</th>
+            <th>Color</th>
+            <th>Air Quality</th>
+          </tr>
+          <tr>
+            <td>0-50</td>
+            <td style="background-color: #00e400;"></td>
+            <td>Good</td>
+          </tr>
+          <tr>
+            <td>51-100</td>
+            <td style="background-color: #ffff00;"></td>
+            <td>Moderate</td>
+          </tr>
+          <tr>
+            <td>101-150</td>
+            <td style="background-color: #ff7e00;"></td>
+            <td>Unhealthy for Sensitive Groups</td>
+          </tr>
+          <tr>
+            <td>151-200</td>
+            <td style="background-color: #ff0000;"></td>
+            <td>Unhealthy</td>
+          </tr>
+          <tr>
+            <td>201-300</td>
+            <td style="background-color: #99004c;"></td>
+            <td>Very Unhealthy</td>
+          </tr>
+          <tr>
+            <td>301-500</td>
+            <td style="background-color: #7e0023;"></td>
+            <td>Hazardous</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy;AirSense Southeast Asia</p>
+  </footer>
+
+  <script src="js/map.js"></script>
+</body>
+
+</html>

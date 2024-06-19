@@ -1,0 +1,17 @@
+@import url('header.css');
+@import url('footer.css');
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #000000;
+
+    background-image: url('../img/background.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
+}

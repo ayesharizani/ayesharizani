@@ -1,0 +1,12 @@
+footer {
+    background-color: #906a63;
+    color: #fff;
+    bottom: 0;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    }
+    
+    footer p {
+    font-weight: 700;
+    }
